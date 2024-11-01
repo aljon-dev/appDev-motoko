@@ -10,6 +10,7 @@ To get started with this template, click the "Open in GitHub Codespaces" button 
 
 A ready to use Codespace environment will be created for you, and you can start developing your Motoko / Svelte 5 project right away.
 
-## Works
-- locally
-- Playground
+## Works for
+- local
+- playground
+- mainnet
