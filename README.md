@@ -14,3 +14,24 @@ A ready to use Codespace environment will be created for you, and you can start 
 - local
 - playground
 - mainnet
+
+## How to deploy to the local replica
+
+Open the VsCode terminal and run the following commands:
+```bash
+# start the local replica
+dfx start --background
+
+# deploy frontend and backend to the local replica
+dfx deploy
+
+```
+
+## How to develop locally
+
+```bash
+# make sure the local replica is running
+# deploy frontend and backend to the local replica
+
+npm run dev
+```
