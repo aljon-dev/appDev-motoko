@@ -40,9 +40,9 @@
     <p>
       Give me your name and say
     </p>
-    <form onsubmit={handleOnSubmit}>
+    <form>
 			<input id="name" alt="Name" type="text" bind:value={input} placeholder="Say hello to"/>
-			<button type="submit" disabled={loading} >Click Me!</button>
+			<button type="submit" disabled={loading} onclick={handleOnSubmit}>Click Me!</button>
 		</form>
 
 		<div> {greeting} </div>

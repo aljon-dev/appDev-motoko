@@ -21,7 +21,7 @@
         		"openFiles": ["backend/main.mo"]
           	},
 	  	"vscode": {
-			"extensions": ["dfinity-foundation.vscode-motoko"]
+			"extensions": ["dfinity-foundation.vscode-motoko","svelte.svelte-vscode","bradlc.vscode-tailwindcss"]
 	  	}
 	}
 
