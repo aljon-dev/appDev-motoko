@@ -1,6 +1,24 @@
 <!-- App.svelte -->
 <script>
   import { onMount } from 'svelte';
+  import { get } from 'svelte/store';
+  import {ic} from '../stores/ic';
+  let greeting = $state('');
+
+  let totalVisitor = $state();
+
+  onMount(async ()=>{
+    
+  
+
+    try {
+    const greeting = await $ic.actor.totalNum() // Get the result
+    console.log(greeting); // Log the response from `totalNum`
+  } catch (error) {
+    console.error('Error calling totalNum:', error); // Log any errors
+  }
+ 
+  })
   
   // Projects data
   const projects = [
