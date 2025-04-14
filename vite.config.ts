@@ -11,7 +11,7 @@ import type { UserConfig } from 'vite';
 // dfx deploy --network ic = ic
 // dfx deploy --playground
 let network = process.env.DFX_NETWORK;
-if(network === undefined){
+if (network === undefined) {
 	network = 'local';
 }
 
@@ -19,9 +19,9 @@ const host = network === 'local' ? 'http://localhost:4943' : 'https://ic0.app';
 
 const readCanisterIds = ({ prefix }: { prefix?: string }): Record<string, string> => {
 	let canisterIdsJsonFile: string;
-	if(network ==='ic'){
+	if (network === 'ic') {
 		canisterIdsJsonFile = join(process.cwd(), 'canister_ids.json');
-	} else if(network === 'playground'){
+	} else if (network === 'playground') {
 		canisterIdsJsonFile = join(process.cwd(), '.dfx', 'playground', 'canister_ids.json');
 	} else {
 		canisterIdsJsonFile = join(process.cwd(), '.dfx', 'local', 'canister_ids.json');
